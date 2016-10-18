@@ -1,0 +1,40 @@
+.DS_Store
+*.swp
+*.lock
+profile
+
+*~.nib
+
+*.pbxuser
+*.xccheckout
+*.xcscmblueprint
+
+*.bcsymbolmap
+
+*.cer
+*.mobileprovision
+
+xcuserdata
+
+DerivedData
+./Build
+.idea
+
+# fastlane temporary profiling data
+/fastlane/report.xml
+/fastlane/test_output/report.html
+/fastlane/test_output/report.junit
+# deliver temporary error output
+/fastlane/Error*.png
+# deliver temporary preview output
+/fastlane/Preview.html
+# snapshot generated screenshots
+/fastlane/screenshots/*/*-portrait.png
+/fastlane/screenshots/*/*-landscape.png
+/fastlane/screenshots/screenshots.html
+# frameit generated screenshots
+/fastlane/screenshots/*/*-portrait_framed.png
+/fastlane/screenshots/*/*-landscape_framed.png
+/fastlane/README.md
+
+Build_Output/*
