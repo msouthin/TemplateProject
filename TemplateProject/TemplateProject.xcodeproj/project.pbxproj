@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2910A0F71DADAE55006B315D /* OTXRadialMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A0F61DADAE55006B315D /* OTXRadialMenu.swift */; };
-		299848581DB6C00700F68A80 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2998484C1DB6BF9700F68A80 /* RxBlocking.framework */; };
-		299848591DB6C00700F68A80 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2998484D1DB6BF9700F68A80 /* RxCocoa.framework */; };
-		2998485A1DB6C00700F68A80 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2998484E1DB6BF9700F68A80 /* RxSwift.framework */; };
+		2998485D1DB6C92B00F68A80 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998485C1DB6C92B00F68A80 /* PermissionViewController.swift */; };
+		299848661DB6CAC700F68A80 /* PAPermissions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299848651DB6CAC700F68A80 /* PAPermissions.framework */; };
 		29B16C841DA4544A0066A7B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B16C831DA4544A0066A7B0 /* AppDelegate.swift */; };
 		29B16C861DA4544A0066A7B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B16C851DA4544A0066A7B0 /* ViewController.swift */; };
 		29B16C891DA4544A0066A7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B16C871DA4544A0066A7B0 /* Main.storyboard */; };
@@ -92,9 +91,8 @@
 
 /* Begin PBXFileReference section */
 		2910A0F61DADAE55006B315D /* OTXRadialMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTXRadialMenu.swift; sourceTree = "<group>"; };
-		2998484C1DB6BF9700F68A80 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Dependencies/Carthage/Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		2998484D1DB6BF9700F68A80 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Dependencies/Carthage/Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		2998484E1DB6BF9700F68A80 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Dependencies/Carthage/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2998485C1DB6C92B00F68A80 /* PermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		299848651DB6CAC700F68A80 /* PAPermissions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAPermissions.framework; path = Dependencies/Carthage/Carthage/Build/iOS/PAPermissions.framework; sourceTree = "<group>"; };
 		29B16C801DA4544A0066A7B0 /* TemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B16C831DA4544A0066A7B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29B16C851DA4544A0066A7B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,9 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299848581DB6C00700F68A80 /* RxBlocking.framework in Frameworks */,
-				299848591DB6C00700F68A80 /* RxCocoa.framework in Frameworks */,
-				2998485A1DB6C00700F68A80 /* RxSwift.framework in Frameworks */,
+				299848661DB6CAC700F68A80 /* PAPermissions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,12 +166,10 @@
 			name = "UI Components";
 			sourceTree = "<group>";
 		};
-		299848561DB6BFAF00F68A80 /* Frameworks */ = {
+		2998485E1DB6CAA500F68A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2998484C1DB6BF9700F68A80 /* RxBlocking.framework */,
-				2998484D1DB6BF9700F68A80 /* RxCocoa.framework */,
-				2998484E1DB6BF9700F68A80 /* RxSwift.framework */,
+				299848651DB6CAC700F68A80 /* PAPermissions.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,13 +177,13 @@
 		29B16C771DA454490066A7B0 = {
 			isa = PBXGroup;
 			children = (
-				299848561DB6BFAF00F68A80 /* Frameworks */,
 				29B16C821DA4544A0066A7B0 /* TemplateProject */,
 				29B16C9A1DA4544A0066A7B0 /* TemplateProjectTests */,
 				29B16CA51DA4544A0066A7B0 /* TemplateProjectUITests */,
 				29B16CBE1DA458070066A7B0 /* Watch */,
 				29B16CCD1DA458070066A7B0 /* Watch Extension */,
 				29B16C811DA4544A0066A7B0 /* Products */,
+				2998485E1DB6CAA500F68A80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,9 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				29CD77331DA5676B00C5FB5B /* pni-ico-gphotos.png */,
+				29B16C831DA4544A0066A7B0 /* AppDelegate.swift */,
+				2998485C1DB6C92B00F68A80 /* PermissionViewController.swift */,
 				29B16CF51DA472A90066A7B0 /* StackedTableViewCell.swift */,
 				29B16CF31DA471B20066A7B0 /* StackedTableViewController.swift */,
-				29B16C831DA4544A0066A7B0 /* AppDelegate.swift */,
 				29B16C851DA4544A0066A7B0 /* ViewController.swift */,
 				2910A0F11DADA756006B315D /* UI Components */,
 				29B16CBA1DA456DD0066A7B0 /* Localizable.strings */,
@@ -482,9 +477,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Dependencies/Carthage/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Dependencies/Carthage/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Dependencies/Carthage/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Dependencies/Carthage/Carthage/Build/iOS/PAPermissions.framework",
 			);
 			name = "Run Carthage Copy Frameworks Script";
 			outputPaths = (
@@ -504,6 +497,7 @@
 				29B16C861DA4544A0066A7B0 /* ViewController.swift in Sources */,
 				29B16CF41DA471B20066A7B0 /* StackedTableViewController.swift in Sources */,
 				2910A0F71DADAE55006B315D /* OTXRadialMenu.swift in Sources */,
+				2998485D1DB6C92B00F68A80 /* PermissionViewController.swift in Sources */,
 				29B16CF61DA472A90066A7B0 /* StackedTableViewCell.swift in Sources */,
 				29B16C841DA4544A0066A7B0 /* AppDelegate.swift in Sources */,
 			);

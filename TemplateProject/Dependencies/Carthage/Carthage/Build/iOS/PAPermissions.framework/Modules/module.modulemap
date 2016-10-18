@@ -1,0 +1,10 @@
+framework module PAPermissions {
+  umbrella header "PAPermissions.h"
+
+  export *
+  module * { export * }
+}
+
+module PAPermissions.Swift {
+    header "PAPermissions-Swift.h"
+}
